@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 200vh; /* To enable scrolling */
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  padding: 15px 0;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.navbar.scrolled {
+  background: #555;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: yellow;
+}
+
+.shop-container {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+}
+/* .jack{
+height: 300px;
+width: 100px;
+} */
+
+.item img {
+  width: 100%;
+  border-radius: 5px;
+  height: 300px;
+}
+
+.item h3 {
+  margin: 10px 0;
+}
+
+.item p {
+  color: #666;
+}
+
+.item button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.item button:hover {
+  background: #555;
+}
